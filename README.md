@@ -167,3 +167,10 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 ### Debugging
 
 ...existing code...
+
+### Screenshots
+
+<img width="1440" height="900" alt="Screenshot 1947-05-03 at 12 25 14 AM" src="https://github.com/user-attachments/assets/be37ed80-816c-4c79-aaac-cb0a0927c78b" />
+
+
+<img width="1440" height="900" alt="Screenshot 1947-05-03 at 12 25 30 AM" src="https://github.com/user-attachments/assets/22fdda7e-ca8f-440e-b577-aa2428c35e97" />
