@@ -1,0 +1,17 @@
+[project]
+name = "simple-mcp-server"
+version = "0.1.0"
+description = "A simple MCP server example"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [ "mcp>=1.12.1",]
+[[project.authors]]
+name = "sidmtpti"
+email = "siddharamayyam@gmail.com"
+
+[build-system]
+requires = [ "uv_build>=0.8.2,<0.9.0",]
+build-backend = "uv_build"
+
+[project.scripts]
+simple-mcp-server = "simple_mcp_server:main"
