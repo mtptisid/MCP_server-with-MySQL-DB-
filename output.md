@@ -67,6 +67,53 @@ curl: (7) Failed to connect to localhost port 8000: Connection refused
 }
 ```
 
+## 7. MySQL Table Resources Documentation
+```
+Resource: MySQL Table: customer
+URI: mysql://localhost/bank/customer
+Schema: Table customer schema: id int, name varchar(100), email varchar(100), phone varchar(20), address varchar(255)
+Sample data:
++---+-------+-------------------+------------+------------+
+| 1 | Alice | alice@example.com | 1234567890 | Wonderland |
++---+-------+-------------------+------------+------------+
+| 2 | Bob   | bob@example.com   | 0987654321 | Builder St |
++---+-------+-------------------+------------+------------+
+
+Resource: MySQL Table: customers
+URI: mysql://localhost/bank/customers
+Schema: Table customers schema: id int, name varchar(100), balance decimal(10,2)
+Sample data:
++---+-------+------+ 
+| 1 | David | 1200 |
++---+-------+------+
+| 2 | Eva   |  300 |
++---+-------+------+
+| 3 | Frank |  800 |
++---+-------+------+
+
+Resource: MySQL Table: transaction
+URI: mysql://localhost/bank/transaction
+Schema: Table transaction schema: id int, customer_id int, amount decimal(10,2), type enum('deposit','withdrawal','transfer'), timestamp datetime
+Sample data:
++---+---+-----+------------+----------+
+| 1 | 1 | 100 | deposit    | datetime |
++---+---+-----+------------+----------+
+| 2 | 2 |  50 | withdrawal | datetime |
++---+---+-----+------------+----------+
+
+Resource: MySQL Table: transactions
+URI: mysql://localhost/bank/transactions
+Schema: Table transactions schema: id int, customer_id int, amount decimal(10,2), type varchar(10)
+Sample data:
++---+---+-----+------------+
+| 1 | 1 | 500 | deposit    |
++---+---+-----+------------+
+| 2 | 2 | 100 | withdrawal |
++---+---+-----+------------+
+| 3 | 3 | 200 | deposit    |
++---+---+-----+------------+
+```
+
 ---
 
 # Summary
